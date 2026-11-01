@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Free Quote | Ignis Grill Restoration</title>
+  <meta name="description" content="Request a free quote for mobile grill cleaning or restoration. Call, email, or send a short form and we’ll get back to you within one business day.">
+  <meta name="theme-color" content="#161312">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Ignis Grill Restoration home">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-name">IGNIS<small>Grill Restoration</small></span>
+      </a>
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="btn btn-primary btn-sm header-cta" href="contact.html#quote"><span class="cta-full">Book Now / Get a Quote</span><span class="cta-short">Get a Quote</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Get a free quote</h1>
+        <p>Tell us a little about your grill and we’ll get back to you, usually within one business day. Prefer to talk? Call or email any time.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-layout">
+        <div>
+          <div class="contact-cards">
+            <a class="contact-card" href="contact.html" data-tel>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span>
+              <span><small>Call or text</small><strong data-phone>[phone]</strong></span>
+            </a>
+            <a class="contact-card" href="#quote" data-mailto>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span><small>Email</small><strong data-email>[email]</strong></span>
+            </a>
+          </div>
+          <div class="contact-info">
+            <h3>Service area</h3>
+            <p>Based in <span data-city>[city]</span>, Colorado, serving <span data-area>[service area]</span>.</p>
+            <h3>What happens next</h3>
+            <p>We’ll review your request, ask for a photo if it helps, and send a clear price and a few available dates. No obligation.</p>
+          </div>
+        </div>
+
+        <div class="panel" id="quote">
+          <h2 style="font-size:1.6rem">Request a quote</h2>
+          <form id="quote-form" class="form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="location">Address or ZIP</label>
+              <input id="location" name="location" type="text" autocomplete="street-address" required>
+            </div>
+            <div class="field">
+              <label for="grill">Grill type</label>
+              <select id="grill" name="grill" required>
+                <option value="">Choose one</option>
+                <option>Gas</option>
+                <option>Charcoal</option>
+                <option>Pellet</option>
+                <option>Built-in / outdoor kitchen</option>
+                <option>Commercial</option>
+                <option>Not sure / other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date <span class="opt">(optional)</span></label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field full">
+              <label for="service">Service <span class="opt">(optional)</span></label>
+              <select id="service" name="service">
+                <option value="">Not sure yet</option>
+                <option value="deep-clean">Standard Deep Clean</option>
+                <option value="restoration">Full Restoration</option>
+                <option value="maintenance">Seasonal / Recurring Maintenance Plan</option>
+                <option value="commercial">Commercial Grill Service</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message <span class="opt">(optional)</span></label>
+              <textarea id="message" name="message" placeholder="Brand, size, how long since the last cleaning, gate codes, anything we should know."></textarea>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="company_website">Leave this empty</label>
+              <input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div id="form-status" class="form-status" role="status" tabindex="-1"></div>
+            <div class="form-foot">
+              <button class="btn btn-primary btn-lg" type="submit">Request my free quote</button>
+              <p>We only use your info to reply to you.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ignis Grill Restoration home">
+            <img src="images/logo.svg" alt="" width="40" height="40">
+            <span class="brand-name">IGNIS<small>Grill Restoration</small></span>
+          </a>
+          <p>Mobile grill cleaning and restoration, done on-site at your home or business. Locally owned in <span data-city>[city]</span>, Colorado.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html" data-tel><span data-phone>[phone]</span></a></li>
+            <li><a href="contact.html#quote" data-mailto><span data-email>[email]</span></a></li>
+            <li>Serving <span data-area>[service area]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html#quote">Get a free quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Ignis Grill Restoration. All rights reserved.</span>
+        <span>Gas · Charcoal · Pellet · Built-in</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="call-fab" href="contact.html" data-tel aria-label="Call Ignis Grill Restoration">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Call <span data-phone>[phone]</span></span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
